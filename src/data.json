@@ -1,0 +1,32 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "PJ 11",
+      "desc": "Just a simple pj you know here and there and more bla bla for the ages.",
+      "url": "https://lol.com",
+      "imageUrl": "http://www.fillmurray.com/900/700"
+    },
+    {
+      "id": 2,
+      "title": "PJ 22",
+      "desc": "Just a simple pj you know here and there and more bla bla for the ages.",
+      "url": "https://lol.com",
+      "imageUrl": "http://www.fillmurray.com/900/800"
+    }
+  ],
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com"
+    },
+    {
+      "name": "codesandbox",
+      "url": "https://github.com"
+    },
+    {
+      "name": "dribbbble",
+      "url": "https://github.com"
+    }
+  ]
+}

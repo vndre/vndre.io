@@ -1,0 +1,191 @@
+@font-face {
+  font-family: "manrope";
+  src: url("manrope.woff2") format("woff2-variations");
+  font-weight: 125 950;
+  font-stretch: 75% 125%;
+  font-style: normal;
+}
+
+:root {
+  --font-family: "manrope", system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
+    "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --primary: #d81b60;
+    --primary-hover: #e91e63;
+    --primary-focus: rgba(216, 27, 96, 0.25);
+    --primary-inverse: #FFF;
+    --blue900: #030508;
+    --gray900: #111827;
+    --gray500: #6b7280;
+    --gray100: #f3f4f6;
+    --teal300: #5eead4;
+    --background-color: var(--blue900);
+    --font-size: 16px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background-color);
+  user-select: none;
+}
+
+a {
+  background: transparent;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+  color: var(--gray100);
+  transition: all 250ms ease-in-out;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+a > i {
+  margin-left: 0.25rem;
+}
+
+main > section {
+  padding: 10rem 20rem;
+}
+
+#s1 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: var(--gray100);
+}
+
+#s1 > .container > h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  max-width: 20ch;
+  line-height: 1.25;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+#s1 > .container > h2 {
+  color: var(--gray500);
+  max-width: 50ch;
+  line-height: 1.75;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+#s2 > h1 {
+  color: var(--gray100);
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+#s2 > .pj + .pj {
+  margin-top: 6rem;
+}
+
+#s2 > .pj > img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+#s2 > .pj > .container {
+  margin: 2rem;
+}
+
+
+#s2 > .pj > .container > h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+#s2 > .pj > .container > p {
+  line-height: 1.25;
+  font-size: 1.25rem;
+  color: var(--gray500);
+  margin-bottom: 2rem;
+}
+
+footer {
+  position: relative;
+  padding: 10rem 20rem;
+}
+
+
+footer > .overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.5;
+}
+
+footer > video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+footer > .content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+}
+
+footer > .content > .col1 {
+  color: var(--gray100);
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+footer > .content > .col1 h1 {
+  line-height: 1;
+}
+
+footer > .content > .col1 a {
+  cursor: pointer;
+}
+
+footer > .content > .col1 a:hover {
+  color: var(--teal300);
+}
+
+footer > .content > .col2 {
+  margin-left: auto;
+  text-align: end;
+}
+
+footer > .content > .col2 a + a {
+  margin-top: 0.5rem;
+}
+
+.fadeup {
+  transform: translateY(50px);
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+}
+
+.in-view {
+  transform: none;
+  opacity: 1;
+}
